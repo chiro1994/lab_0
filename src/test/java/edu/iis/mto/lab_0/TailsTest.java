@@ -34,6 +34,11 @@ public class TailsTest {
 		
 		assertThat(tails.get(tails.size()-1), Matchers.equalTo(""));
 	}
+	@Test
+	public void tailsShouldReturnMiddleStringAsThirdElement() {
+		
+		assertThat(tails.get(tails.size()-4), Matchers.equalTo("llo"));
+	}
 	
 
 }
